@@ -1,0 +1,19 @@
+// Media Query Breakpoints 
+
+/* Extra small devices (phones, 600px and down) */
+$mobile: "(max-width: 500px)";
+
+$largeMobile: "(min-width: 500px) and (max-width: 767px)";
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+$minSmall: "(min-width: 768px) and (max-width: 991px)";
+/* Medium devices (landscape tablets, 768px and up) */
+$minMedium: "(min-width: 992px) and (max-width: 1119px)";
+/* Large devices (laptops/desktops, 992px and up) */
+$minLarge: "(min-width: 1200px)";
+
+$mainColor: #007991;
+
+$secondColor: #78ffd6;
+
+$thirdColor: #78ffd62e;
