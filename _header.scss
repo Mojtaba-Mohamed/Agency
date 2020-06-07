@@ -1,0 +1,176 @@
+/***** Start Navbar *****/
+
+.navbar {
+    background-color: $mainColor;
+    padding-bottom: 13px;
+    .nav-item > a {
+        color: #ffffffc7;
+        &:hover {
+            @extend %transition;
+            color: #FFF
+        }
+    }
+    .active > .nav-link {
+        color: #FFF
+    } 
+    .navbar-toggler {
+        &:focus {
+        outline: none;
+        }
+    .navbar-toggler-icon {
+        display: none
+        }
+    }
+    .hamburger {
+        padding: 5px 15px;
+        position: absolute;
+        right: 0;
+        top: 6px;
+        .hamburger-inner {
+            background-color: #FFF;
+            height: 1.9px;
+            border-radius: 2px;
+            &::after, &::before {
+            background-color: #FFF;
+            height: 1.9px;
+            border-radius: 2px;
+            }
+        }
+    }
+    .hamburger.is-active {
+        .hamburger-inner {
+        background-color: #FFF;
+        &::after, &::before {
+          background-color: #FFF;
+        }
+      }
+    }
+
+
+    .dropdown-toggle {
+        &::after{
+            display: none
+        }
+    }
+    .dropdown-menu {
+        .dropdown-item {
+            @extend %transition;
+            &:hover {
+                background-color: $mainColor;
+                color: #FFF;
+                padding: 8px 34px
+            }
+        }
+    }
+
+
+    .dropdown-divider {
+        border-top: 1px solid #e4e4e4
+    }
+}
+
+.navbar-brand {
+    color: #FFF;
+    &:hover {
+        color: #FFF
+    }
+}
+
+/***** End Navbar *****/
+
+/***** Start Header *****/
+
+header {
+    position: relative;
+    background-image: linear-gradient($mainColor ,$secondColor);
+    color: #FFF;
+    text-align: center;
+    overflow: hidden;
+    height: 600px;
+    margin-top: 56px;
+    .header-info {
+        float: left;
+        width: 50%;
+        position: absolute;
+        top: 138px;
+        left: 0;
+        @media #{$largeMobile} {
+            float: none;
+            width: 100%
+        }
+        @media #{$mobile} {
+            float: none;
+            width: 100%
+        }
+        h1 {
+        margin-bottom: 10px;
+        white-space: no-wrap;
+        @media #{$minSmall} {
+            font-size: 39px;
+        }
+        @media #{$largeMobile} {
+            position: absolute;
+            top: -83px;
+        }
+        @media #{$mobile} {
+            position: absolute;
+            top: -83px;
+        }
+        }
+        p {
+            color: #FFF;
+            @media #{$largeMobile} {
+                display: none
+            }
+            @media #{$mobile} {
+                display: none
+            }
+        }
+    }
+    .header-img{
+        float: left;
+        width: 50%;
+        @media #{$largeMobile} {
+            float: none;
+            width: 100%
+        }
+        @media #{$mobile} {
+            float: none;
+            width: 100%
+        }
+        img {
+            position: absolute;
+            top: 50px;
+            right: 20px;
+            width: 45%;
+            @media #{$minSmall} {
+                top: 108px;
+                right: 0px;
+                width: 50%;
+            }
+            @media #{$largeMobile} {
+                top: 206px;
+                right: 40px;
+                width: 74%;
+            }
+            @media #{$mobile} {
+                top: 206px;
+                right: 40px;
+                width: 74%;
+            }
+        }
+    }
+}
+
+svg {
+    display: block;
+    .stop1 {
+        stop-color: $secondColor
+    }
+    .stop2 {
+        stop-color: $secondColor
+    } 
+}
+
+
+/***** End Header *****/

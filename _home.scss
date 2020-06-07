@@ -1,0 +1,520 @@
+/***** Start About Section *****/
+
+.about {
+    position: relative;
+    bottom: 10px;
+    z-index: 2;
+    .about-img {
+        position: absolute; 
+        float: left;
+        width: 60%;
+        height: 465;
+        @media #{$largeMobile} {
+            display: none
+        }
+        @media #{$mobile} {
+            display: none
+        }
+        svg {
+            position: relative;
+            bottom: 209px;
+            right: 74px;
+            width: 795px;
+            z-index: 1;
+            @media #{$minMedium} {
+                width: 660px;
+                bottom: 189px;
+            }
+            @media #{$minSmall} {
+                bottom: 84px;
+                right: 74px;
+                width: 520px
+            }
+        }
+        img {
+            position: relative;
+            left: 7px;
+            bottom: 865px;
+            width: 88%;
+            z-index: 2;
+            @media #{$minMedium} {
+                bottom: 717px;
+                width: 83%;
+            }
+            @media #{$minSmall} {
+                right: 5px;
+                bottom: 518px;
+            }
+        }
+    }
+    .about-info{
+    float: left;
+    position: absolute;
+    width: 40%;
+    top: 20px;
+    right: 0;
+    @media #{$minMedium} {
+        top: -20;
+    }
+    @media #{$largeMobile} {
+        float: none;
+        width: 93%;
+        top: 50px;
+    }
+    @media #{$mobile} {
+        float: none;
+        width: 93%;
+        top: 50px;
+    }
+    h2 {
+        @media #{$minSmall} {
+            font-size: 41px
+        }
+        @media #{$largeMobile} {
+            font-size: 35px
+        }
+        @media #{$mobile} {
+            font-size: 35px
+        }
+    }
+    button {
+        background: linear-gradient($mainColor ,$secondColor);
+        opacity: .5;
+        color: #FFF;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 10px;
+        margin-top: 35px;
+        @extend %transition;
+        @media #{$minMedium} {
+            margin-top: 10px
+        }
+        @media #{$largeMobile} {
+            margin-top: 0;
+        }
+        @media #{$mobile} {
+            margin-top: 0;
+        }
+        &:hover {
+            opacity: 1
+        }
+    }
+    }
+}
+
+/***** End About Section *****/
+
+/***** Start Features Section *****/
+
+.features-svg {
+    padding-top: 465px;
+    @media #{$largeMobile} {
+        padding-top: 385px;
+    }
+    @media #{$mobile} {
+        padding-top: 385px;
+    }
+}
+
+.features {
+    background-color: $thirdColor;
+    overflow: hidden;
+    padding-bottom: 20px;
+    padding-top: 0;
+    h2 {
+        text-align: center;
+        margin-bottom: 120px;
+        @media #{$largeMobile} {
+            font-size: 28px;
+        }
+        @media #{$mobile} {
+            font-size: 28px;
+        }
+    }
+    .feature-box {
+        background-color: #FFF;
+        float: left;
+        width: (94% / 4);
+        text-align: center;
+        padding: 30px 20px;
+        box-shadow: 0px 8px 16px rgba(37, 37, 37, 0.1);
+        z-index: 1;
+        height: 274px;
+        &:not(:last-of-type) {
+            margin-right: 2%;
+        }
+        @media #{$minSmall} {
+            width: (94% / 2);
+            &:not(:last-of-type) {
+                margin-right: 3%
+            }
+            &:nth-of-type(1), &:nth-of-type(2) {
+                margin-bottom: 105px;
+            }
+        }
+        @media #{$largeMobile} {
+            float: none;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 121px;
+            padding: 25px 50px;
+        }
+        @media #{$mobile} {
+            float: none;
+            width: 100%;
+            height: 300px;
+            margin-bottom: 121px;
+            padding: 25px 50px;
+        }
+        img {
+            width: 100%;
+            position: relative;
+            bottom: 85px;
+            z-index: 2;
+            @media #{$minSmall} {
+                width: 65%
+            }
+            @media #{$largeMobile} {
+                width: 80%
+            }
+            @media #{$mobile} {
+                width: 80%
+            }
+        }
+        h3 {
+            position: relative;
+            bottom: 75px;
+            right: 11px;
+            width: 242px;
+            @media #{$minMedium} {
+                right: 35px;
+                font-size: 24px
+            }
+            @media #{$minSmall} {
+                left: 23px;
+            }
+            @media #{$largeMobile} {
+                right: 0;
+                width: auto
+            }
+            @media #{$mobile} {
+                right: 0;
+                width: auto
+            }
+        }
+        .one {
+            padding-top: 32px;
+        }
+        .two {
+            padding-top: 15px;
+        }
+        .three {
+            padding-top: 1px;
+        }
+        .four {
+            padding-top: 45px;
+            @media #{$minMedium} {
+                padding-top: 40px
+            }
+        }
+        p {
+            font-size: 14px;
+            position:relative;
+            top: -65px;
+        }
+    }
+}
+
+/***** End Features Section *****/
+
+/***** Start Pricing Section *****/
+
+.pricing {
+    h2 {
+        text-align: center;
+        margin-top: -48px;
+        margin-bottom: 49px;
+        @media #{$minSmall} {
+            margin-top: 0%
+        }
+        @media #{$largeMobile} {
+            margin-top: 30px;
+            font-size: 41px
+        }
+        @media #{$mobile} {
+            margin-top: 30px;
+            font-size: 41px
+        }
+    }
+    .price-table {
+        position: relative;
+        float: left;
+        width: (91% / 3);
+        text-align: center;
+        padding: 40px 20px;
+        box-shadow: 0px 16px 24px rgba(37, 37, 37, 0.1);
+        &:not(:last-of-type) {
+            margin-right: 3%;
+        }
+        @media #{$minSmall} {
+            width: (91% / 2);
+            &:not(:last-of-type) {
+                margin-right: 4%;
+            }
+            &:last-of-type {
+                position: relative;
+                left: 165px;
+                margin-top: 40px;
+            }
+        }
+        @media #{$largeMobile} {
+            float: none;
+            width: 90%;
+            margin: 20% 5%;
+        }
+        @media #{$mobile} {
+            float: none;
+            width: 90%;
+            margin: 20% 5%;
+        }
+        .price-icon {
+            position: relative;
+            bottom: 16px;
+            left: 25%;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: $thirdColor;
+            text-align: center;
+            @media #{$minMedium} {
+                left: 20%
+            }
+            @media #{$largeMobile} {
+                left: 0;
+                margin: 15px auto;
+            }
+            @media #{$mobile} {
+                left: 0;
+                margin: 15px auto;
+            }
+            i {
+                font-size: 80px;
+                color: $mainColor;
+                line-height: 1.8;
+            }
+            .one {
+                transform: rotate(-35deg);
+            }
+        }
+        .price-info {
+            span {
+                display: block;
+                font-size: 17px;
+                line-height: 1.8;
+                color: #9e9e9e;
+                &:first-of-type {
+                    font-size: 40px;
+                    color: #222
+                }
+                &:nth-of-type(4) {
+                    margin-left: 8px
+                }
+            }
+            .la-check {
+                color: #0F0;
+            }
+            .la-times {
+                color: #F00;
+            }
+            
+            button {
+                background: linear-gradient($mainColor ,$secondColor);
+                opacity: .5;
+                color: #FFF;
+                padding: 10px 30px;
+                border: none;
+                border-radius: 10px;
+                margin-top: 30px;
+                @extend %transition;
+                &:hover {
+                    opacity: 1
+                }
+            }
+        }
+    }
+}
+
+/***** End Pricing Section *****/
+
+/***** Start Contact Us Section *****/
+
+.contact {
+    background-color: $thirdColor;
+    padding-top: 0;
+    height: 740px;
+    @media #{$minMedium} {
+        height: 744px;
+    }
+    @media #{$minSmall} {
+        height: 660px
+    }
+    @media #{$largeMobile} {
+        height: 775px;
+    }
+    @media #{$mobile} {
+        height: 775px;
+    }
+    @media  (max-width: 320){
+        height: 836px
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        @media #{$mobile} {
+            padding-top: 30px
+        }
+    }
+    img {
+        display: none;
+        @media #{$mobile} {
+            display: block;
+            width: 50%;
+            margin: auto;
+        }
+    }
+    .contact-icon {
+        position: relative;
+        float: left;
+        width: 60%;
+        @media #{$minSmall} {
+            width: 50%;
+            right: 40px
+        }
+        @media #{$largeMobile} {
+            display: none
+        }
+        @media #{$mobile} {
+            display: none
+        }
+        i {
+            position: relative;
+            top: 13px;
+            font-size: 368px;
+            color: $mainColor;
+            @media #{$minSmall} {
+                bottom: 11px;
+                font-size: 400px;
+            }
+        }
+    }
+    .contact-info {
+        float: left;
+        width: 40%;
+        @media #{$minSmall} {
+            width: 50%;
+        }
+        @media #{$largeMobile} {
+            float: none;
+            width: 100%
+        }
+        @media #{$mobile} {
+            float: none;
+            width: 100%
+        }
+        h3 {
+            color: $mainColor;
+            font-size: 35px;
+            @media #{$largeMobile} {
+                margin-bottom: 10px;
+                margin-top: 25px;
+            }
+            @media #{$mobile} {
+                margin-bottom: 10px;
+                margin-top: 25px;
+            }
+        }
+        span {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #555
+        }
+        form {
+            position: relative;
+            input[type=text], textarea {
+                display: block;
+                border: none;
+                border-radius: 10px;
+                background-color: #FFF;
+                padding: 10px 20px;
+                outline-color: $mainColor
+            }
+            input[type=text] {
+                width: 250px;
+                margin-bottom: 35px
+            }
+            textarea {
+                height: 100px;
+                width: 350px;
+                @media #{$minSmall} {
+                    width: 325px
+                }
+                @media #{$largeMobile} {
+                    width: 285px
+                }
+                @media #{$mobile} {
+                    width: 285px
+                }
+            }
+            input[type=submit] {
+                background: linear-gradient($mainColor ,$secondColor);
+                opacity: .5;
+                color: #FFF;
+                padding: 10px 30px;
+                border: none;
+                border-radius: 10px;
+                position: absolute;
+                bottom: 3px;
+                right: 95px;
+                @extend %transition;
+                &:hover {
+                    opacity: 1
+                }
+                @media #{$minMedium} {
+                    right: 22px;
+                }
+                @media #{$minSmall} {
+                    right: 19px;
+                }
+                @media #{$largeMobile} {
+                    margin-left: 176px;
+                    right: auto;
+                }
+                @media #{$mobile} {
+                    margin-left: 176px;
+                    right: auto;
+                }
+            }
+            li {
+                font-size: 32px;
+                margin-top: 20px;
+                display: inline-block;
+                cursor: pointer;
+                &:nth-of-type(1) {
+                    color: #3b5998
+                }
+                &:nth-of-type(2) {
+                    color: #00acee
+                }
+                &:nth-of-type(3) {
+                    color: rgb(209, 23, 23)
+                }
+                &:nth-of-type(4) {
+                    color: #0077b5
+                }
+            }
+        }
+    }
+}
+
+/***** End Contact Us Section *****/
